@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sebs=false;
+    </script>
+</head>
+
+<!--https://docs.google.com/forms/d/e/1FAIpQLScM2E-n4ES4XPJOPa26YJg3bAP5qCYerQV3gAPY4X5jZaPdgA/viewform?
+usp=pp_url&
+entry.257761418=Rohan+Saini&
+entry.738645469=22&
+entry.665519193=Male&
+entry.1077962112=2002-12-15-->
+
+<iframe id="sub" name="sub" style="display: none;" onload="if(subs){window.location='end.html'}"></iframe>
+
+<body>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScM2E-n4ES4XPJOPa26YJg3bAP5qCYerQV3gAPY4X5jZaPdgA/formResponse" target="sub" onsubmit="subs=true">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="entry.257761418">
+        <br><br>
+        <label for="age">Age:&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" id="age" name="entry.738645469">
+
+        <h3>Gender:</h3>
+        <input type="radio" value="Male" id="Male" name="entry.665519193">
+        <label for="Male">Male</label>
+        <input type="radio" value="Female" id="Female" name="entry.665519193">
+        <label for="Female">Female</label>
+        <br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="entry.1077962112">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
